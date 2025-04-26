@@ -1,6 +1,6 @@
 # 🎵 SalvaMúsica
 
-Sistema de recomendação de músicas desenvolvido como projeto de estudos, com o objetivo de reforçar o aprendizado em **persistência de dados utilizando Java e Spring Boot**.
+Sistema de busca de músicas desenvolvido como projeto de estudos, com o objetivo de reforçar o aprendizado em **persistência de dados utilizando Java e Spring Boot**.
 
 ---
 
