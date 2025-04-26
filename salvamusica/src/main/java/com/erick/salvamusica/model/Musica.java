@@ -1,6 +1,7 @@
 package com.erick.salvamusica.model;
 
 import com.erick.salvamusica.dto.MusicaDTO;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
@@ -18,6 +19,7 @@ public class Musica {
     private String genero;
     private int duracao;
     @ManyToMany(mappedBy = "favoritas")
+    @JsonIgnore
     private List<Usuario> usuarios = new ArrayList<>();
 
     public Musica(){}
