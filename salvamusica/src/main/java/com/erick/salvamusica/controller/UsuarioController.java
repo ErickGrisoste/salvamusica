@@ -6,6 +6,7 @@ import com.erick.salvamusica.model.Usuario;
 import com.erick.salvamusica.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,6 +16,7 @@ import java.util.List;
 public class UsuarioController {
     @Autowired
     private UsuarioService service;
+
 
     @PostMapping("/cadastrar")
     public ResponseEntity<Usuario> cadastrar(@RequestBody Usuario usuario){

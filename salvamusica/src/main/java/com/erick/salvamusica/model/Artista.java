@@ -11,8 +11,8 @@ public class Artista {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
     private String nome;
-//    @OneToMany(mappedBy = "artista")
-//    private List<Musica> musicas;
+    @OneToMany(mappedBy = "artista")
+    private List<Musica> musicas;
 
     public Long getId() {
         return Id;
@@ -30,11 +30,11 @@ public class Artista {
         this.nome = nome;
     }
 
-//    public List<Musica> getMusicas() {
-//        return musicas;
-//    }
-//
-//    public void setMusicas(List<Musica> musicas) {
-//        this.musicas = musicas;
-//    }
+    public List<Musica> getMusicas() {
+        return musicas;
+    }
+
+    public void setMusicas(List<Musica> musicas) {
+        this.musicas = musicas;
+    }
 }
